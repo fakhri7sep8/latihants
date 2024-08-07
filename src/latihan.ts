@@ -1,13 +1,13 @@
 // nomor 1
 
-function minimal(a:number , b:number) {
-
-    const kecil = a < b 
-    return kecil
+function minimal(a:number , b: number) {
+    const perbandingan = a < b ? a : b
+    return perbandingan
 }
 
-const angka = minimal (1,4)
-console.log(angka);
+const banding = minimal (2,9)
+console.log(banding);
+
 
 //nomor 2
 
@@ -21,6 +21,13 @@ console.log(kuadrat);
 
 //nomor 3
 
+function findEvenNumbers(numbers: number[]): number[] {
+    return numbers.filter(number => number % 2 === 0);
+}
+
+// Contoh penggunaan
+const angka1 = [5, 3, 9, 1, 4, 6, 8];
+console.log(findEvenNumbers(angka1)); 
 
 
 //nomor 4
@@ -92,6 +99,23 @@ class EagleRun extends Eagle {
 
 const elang2 = new Eagle("elang2" , 12 , true , 100)
 console.log(elang2);
+elang2.run
+
+//nomor 8
+
+const myRabbit = new Rabbit("kelinci",12 , true)
+console.log(myRabbit);
+
+//nomor 9
+
+const myEggle = new Eagle("elang" , 12 , false , 100)
+console.log(myEggle);
+
+//nomor 10
+
+const runEggle = new Eagle("elang" , 12 , false , 100)
+console.log(runEggle);
+
 
 
 
